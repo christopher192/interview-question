@@ -21,3 +21,23 @@
     - Simpler Model: Reducing the complexity of the model (fewer layers in deep learning, fewer parameters in traditional ML models) can prevent overfitting.
 
 3. Model Deployment?
+    - Step 1: Model Training & Evaluation
+        - Train the model by using dataset.
+        - Evaluate its performance using test dataset (accuracy, precision, recall, etc.).
+        - Save the trained model in format (ONNX, Pickle, etc)
+    - Step 2: Containerization & Packaging
+        - Use Docker to containerize the model, ensuring it runs consistently across environments.
+        - Example: Create a Flask or FastAPI service to expose the model as a REST API in Docker
+    - Step 3: Model Hosting & Deployment
+        - Deploy on cloud platforms (AWS, GCP, Azure) or on-premise servers.
+        - Use Kubernetes and Seldon Core for scalable and efficient deployment.
+        - Serve the model with TensorFlow Serving, TorchServe, or MLflow.
+    - Step 4: Monitoring & Logging
+        - Implement monitoring to track latency, prediction accuracy, and model drift.
+        - Utilize tools like Prometheus, Grafana, or ELK Stack for logging and alerts.
+    - Step 5: Scaling & Load Balancing
+        - Use autoscaling with Kubernetes to handle increased traffic.
+        - Implement caching mechanisms like Redis to optimize response times.
+    - Step 6: CI/CD for ML Models (MLOps)
+        - Automate retraining and deployment with Tekton, GitHub Actions, or Jenkins.
+        - Store model versions in MLflow or Model Registry for easy rollback.
