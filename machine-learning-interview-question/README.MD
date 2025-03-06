@@ -41,3 +41,27 @@
     - Step 6: CI/CD for ML Models (MLOps)
         - Automate retraining and deployment with Tekton, GitHub Actions, or Jenkins.
         - Store model versions in MLflow or Model Registry for easy rollback.
+
+4. What is model drift, and how do you handle it?
+    - Model drift happens when a model`s performance degrades over time due to changes in real-world data.
+    - Handle Model Drift
+        - Continuous Monitoring: Track performance metrics using Prometheus, Grafana, or MLflow.
+        - Periodic Retraining: Re-train the model with fresh data.
+        - Adaptive Learning: Implement online learning techniques.
+        - Drift Detection Tools: Use Evidently AI or River for detecting drift.
+
+5. How would you optimize an ML model for inference speed and efficiency?
+    - Quantization: Convert weights to lower precision (e.g., FP32 → INT8).
+    - Pruning: Remove unnecessary model weights.
+    - Batching: Process multiple inputs at once.
+    - Use Efficient Model Architectures: Like MobileNet, EfficientNet for edge devices.
+    - Leverage Hardware Acceleration: Run on TPUs, GPUs, or specialized inference engines.
+
+6. How does transfer learning work in deep learning?
+    - It uses a pre-trained model and fine-tunes it on a new dataset, reducing training time and data requirements.
+
+7. What are hyperparameter tuning methods?
+    - Grid Search, Random Search, Bayesian Optimization, and Hyperband.
+
+8. How does Kubernetes help in ML model deployment?
+    - Kubernetes provides scalability, auto-healing, and rolling updates, making it ideal for serving ML models in production.
